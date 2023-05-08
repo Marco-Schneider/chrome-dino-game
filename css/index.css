@@ -1,0 +1,64 @@
+.game-window {
+  position: relative;
+  width: 80%;
+  height: 200px;
+  margin: auto; 
+}
+
+.game-title {
+  text-align: center;
+}
+
+.chromium-dino {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  bottom: 0px;
+}
+
+.chromium-dino-jump {
+  animation: character-jump 3s;
+}
+
+.obstacle-small {
+  position: absolute;
+  width: 25px;
+  height: 80px;
+  background-color: green;
+  bottom: 0px;
+  animation: ground-obstacle 3s infinite;
+  animation-timing-function: linear;
+}
+
+.obstacle-medium {
+  position: absolute;
+}
+
+.obstacle-big {
+  position: absolute;
+}
+
+@keyframes ground-obstacle {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 100%;
+  }
+}
+
+@keyframes character-jump {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 80px;
+  }
+  75% {
+    top: 75px;
+  }
+  100% {
+    top: 0px
+  }
+}
