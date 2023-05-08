@@ -18,7 +18,7 @@
 }
 
 .chromium-dino-jump {
-  animation: character-jump 3s;
+  animation: character-jump 1.5s;
 }
 
 .obstacle-small {
@@ -33,6 +33,7 @@
 
 .obstacle-medium {
   position: absolute;
+  animation-timing-function: linear;
 }
 
 .obstacle-big {
@@ -50,15 +51,12 @@
 
 @keyframes character-jump {
   0% {
-    top: 0px;
+    bottom: 0px;
   }
-  25% {
-    top: 80px;
-  }
-  75% {
-    top: 75px;
+  50% {
+    bottom: 100px;
   }
   100% {
-    top: 0px
+    bottom: 0px
   }
 }
