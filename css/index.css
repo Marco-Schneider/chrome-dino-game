@@ -3,6 +3,8 @@
   width: 80%;
   height: 200px;
   margin: auto; 
+  border-color: red;
+  border-width: 5px;
 }
 
 .game-title {
@@ -18,7 +20,7 @@
 }
 
 .chromium-dino-jump {
-  animation: character-jump 1.5s;
+  animation: character-jump 1.0s;
 }
 
 .obstacle-small {
